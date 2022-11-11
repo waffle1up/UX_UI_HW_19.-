@@ -1,32 +1,48 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title></title>
+        <title>My Portfolio</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/index.js"></script>
+    <link rel="stylesheet" href="CSS/style.css">
     </head>
-    <link rel="stylesheet" href="CSS\style.css">
     <body>
-        <h1 id="navigation">
-            <div class="inline-block logo">
+        <div id="navigation">
+            <div class="logo">
                 <img
-                    src="images\icon.PNG" 
+                    src="images/icon.PNG" 
                     alt="I painted this in procreate" 
                     width="200" 
                     height=""
                     >
             </div>
-         <nav class="inline-block">
+         <nav class="navBar">
             <ul>
-                <li>about</li>
-                <li>skills</li>
-                <li>work</li>
-                <li>contact</li>
+                <li> 
+                    <a href="#homePage">home</a>
+                </li>
+                <li>
+                    <a href="#about_Me">about</a>
+                </li>
+                <li>
+                    <a href="#my_Skills">skills</a>
+                </li>
+                <li><a href="#my_Work">work</a>
+                </li>
+                <li><a href="#about_Me">contact</a>
+                </li>
             </ul>
          </nav>
-        </h1>
-        <section class="heroimg">
-            <div class="content">
-                <img src="images\profile fake.png" width="200" height="">
-                <p style="background-image:url('images\hero image.webp');" > 
+        </div>
+        <section class="home" id="homePage" style='background-image:images\hero_imagepng;'>
+            <h1>Charles Gbadehan</h1>
+            <p> Ux/UI designer </p>
+            
+        </section>
+        <section class="aboutMe" id="about_Me" style='background-image:images/About_me_backgroundjpg; ' style="width:200 px">
+            <div classat="content">
+                <img src="images/profile_fake.png" width="500" id="profile" style="float:right;">            
+                <p id="intro_statement">
                     Yo, My name is Adetokunbo Gbadehan, 
                     I am a aspiring UX/UI designer, 
                     with a passion for making the 
@@ -41,10 +57,10 @@
                     spearhead user interviews and viewing each 
                     opportunity as a challenge meant to be overcome
                 </p>
-             <button id="downloadMyResume" type="button">Download my resume</button>
-        </div>
+             <button id="downloadMyResume" type="button" style="height: 100px;">Download my resume</button>
+            </div>
         </section>
-        <section class="mySkills">
+        <section class="mySkills" id="my_Skills" style="background-image:images/skills_backgroundjpg;">
             <h1>
                 My Skills
             </h1>
@@ -102,7 +118,7 @@
                 </div>
             </div>
         </section>
-        <section class="mySkills">
+        <section class="mySkills" id="my_Work" >
             <h1>
                 My Work
             </h1>
@@ -134,7 +150,5 @@
                 <li>contact</li>
             </ul>
         </footer>
-        <script src="js/index.js"> 
-        console.log ("Your index.js file is loaded correctly!");</script>
     </body> 
 </html>

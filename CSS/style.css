@@ -1,6 +1,10 @@
-.inline-block {
-    display: inline-block;
-    vertical-align: top;
+html {
+    scroll-behavior: smooth;
+  }
+#navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .logo{
     width:23%;
@@ -9,7 +13,8 @@
 nav{
     display:flex;
     width: 73%;
-    padding: 1%;}
+    padding: 1%;
+}
 ul{
     width: 50%;
     margin-left: auto;
@@ -17,18 +22,40 @@ ul{
 img{
     text-align: center;
 }
-.heroimg{
+.home{
     height: 600px;
-    padding:25px;}
+    padding:25px;
+    background-image: url("../images/hero_image.png") ;
+    background-size:1330px ;
+    background-repeat: no-repeat;
+    background-position: center;   
+}
+
+.aboutMe{
+    height: 600px;
+    padding:25px;
+    background-image: url("../images/About_me_background.jpg");
+    background-repeat: no-repeat;
+    background-size: 1330px ;
+    background-position: center;
+    font-size: 40px;
+    text-align: center;
+    
+}
+
 .content{
     width: 500px;
     margin: 0 auto;
+}
+.mySkills{
+    background-image: url("../images/skills_background.jpg");
 }
 footer{
     background-color: #6494c1;
     
 
 }
+
 ul{ 
     display: inline-block;
     vertical-align: top;
@@ -36,11 +63,11 @@ ul{
 }
 li{
     padding-inline-start: 0%;
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
 }
-.flexContainer{
-    display:table-column
-    flex-direction:table-row
-}
+
 img{
     max-width: 100%;
     height:auto;
@@ -65,6 +92,4 @@ p, h1, h3, li{
     display:grid;
     grid-template-areas: 'myArea myArea myArea myArea';
 }
-p{
-    background-image: url('images\hero image.webp');
-}
+
